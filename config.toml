@@ -1,5 +1,43 @@
+# base URL
 baseURL = 'https://visionbike.github.io'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "LoveIt"
+# site publish directory
 publishdir = "visionbike.github.io"
+# language code
+languageCode = 'en-us'
+# site title
+title = 'Visionbike'
+# site theme
+theme = "LoveIt"
+
+# site author config
+[author]
+    name = "Phuc Thanh-Thien Nguyen"
+    email = "phuc.visionbike@gmail.com"
+
+# site header config
+[params.header]
+    # desktop header mode ["fixed", "normal", "auto"]
+    desktopMode = "auto"
+    # mobile header mode ["fixed", "normal", "auto"]
+    mobileMode = "auto"
+    # header title config
+    [params.header.title]
+        # logo URL
+        logo = ""
+        # title name
+        name = "Visionbike"
+        # whether to use typeit aniomation
+        typeit = false
+
+# site footer config
+[params.footer]
+    enable = true
+    # whether to show Hugo and theme info
+    hugo = true
+    # whether to show copyright info
+    copyright = true
+    # whether to show author
+    author = true
+    # site creation time
+    since = 2023
+
