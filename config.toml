@@ -58,7 +58,7 @@ theme = "LoveIt"
         # avatar URL shown in home page
         avatarURL = "/images/avatar-3d.png"
         # title shown in the home page
-        title = "visonbike.github.io"
+        title = "visionbike.github.io"
         # subtitle shown in the home page
         subtitle = "Personal Notes for CV | DSP | ML"
         # disclaimer
