@@ -1,7 +1,7 @@
 ---
 title: "About Visionbike"
 date: 2023-01-18T20:20:40+07:00
-draft: true
+draft: false
 ---
 
 {{< style "img { width: 10rem; height: auto; margin: 0 auto; border-radius: 25%; }" >}}
