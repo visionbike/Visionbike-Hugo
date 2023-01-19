@@ -86,6 +86,17 @@ theme = "LoveIt"
         # content honvering on the icon
         title = "Email"
 
+# page global config
+[params.page]
+    # table of content config
+    [params.page.toc]
+        # whether to enable table of the contents
+        enable = true
+        # whether to keep the table of the contents in front of the post
+        keepStatic = true
+        # whether to make the table of the contents the sidebar automatically collapse
+        auto = true
+
 # menu config
 [menu]
     [[menu.main]]
@@ -113,3 +124,42 @@ theme = "LoveIt"
         identifier = "cv"
         name = "CV"
         url = "/cv/"
+
+# markup related config in Hugo
+[markup]
+    # syntax highlighting (https://gohugo.io/content-management/syntax-highlighting)
+    [markup.highlighting]
+        codeFences = true
+        guessSyntax = true
+        lineNos = true
+        lineNumbersInTable = true
+        # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+        noClasses = false
+    # Goldmark is from Hugo 0.60 the default labrary used for markdown
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            definitionList = true
+            footnote = true
+            linkify = true
+            strikethrough = true
+            table = true
+            taskList = true
+            typographer = true
+        [markup.goldmark.renderer]
+            # whether to use HTML tags directly in the document
+            unsafe = true
+    # table of contents settings
+    [markup.tableOfcontents]
+        startLevel = 2
+        endLevel = 6
+
+# sitemap config
+[sitemap]
+    changefreq = "monthly"
+    filename = "sitemape.xml"
+    priority = 0.5
+
+
+# permalinks config
+[permalinks]
+    posts = ":filename"

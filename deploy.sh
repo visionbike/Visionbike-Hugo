@@ -8,11 +8,10 @@ Help()
     # display Help
     echo "Script for deploying blog."   
     echo 
-    echo "Syntax: deploy.sh [-h] [-g string] [-t string] [-s string]"
+    echo "Syntax: deploy.sh [-h] [-g optstring] [-s optstring]"
     echo "options:"
     echo "h     Print this Help."
     echo "g     Set the commit for hosting site with the commit string."
-    echo "t     Set the commit for theme with the commit string."
     echo "s     Set the commit for blog soource with the commit string."
     echo
 }
@@ -36,15 +35,13 @@ MSG_THEME=""
 if [ $# -eq 0 ]; then
     echo -e "\033[0;32mError: No input arguments. Please execute \"deploy.sh -h\" for getting help.\033[0m"
 else
-    while getopts ":h:g:t:s" option; do
+    while getopts ":h:g:s" option; do
         case $option in
             h) # display Help
                 Help
                 exit;;
             g) # set the hosting site commit
                 MSG_SITE=$OPTARG;;
-            t) # set the theme commit
-                MSG_THEME=$OPTARG;;
             s) # set the site commit
                 MSG_SITE=$OPTARG;;
             \?) # invalid option
@@ -70,19 +67,6 @@ if [ -n "$MSG_GH" ]; then
     cd ../
 else
     echo -e "\033[0;32mNo changes in submodule \"public\" or commit string is given.\033[0m"
-fi
-
-if [ -n "$MSG_THEME" ]; then
-    # go to the theme folder
-    cd themes/$THEME_FOLDER
-    # add changes to git
-    git add .
-    # commit changes
-    git commit -m "$MSG_THEME"
-    #
-    cd ../
-else
-    echo -e "\033[0;32mNo changes in submodule \"theme\" or no commit string is given.\033[0m"
 fi
 
 if [ -n "$MSG_SITE" ]; then
