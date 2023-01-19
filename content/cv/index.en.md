@@ -2,7 +2,7 @@
 title: "Curriculum Vitae"
 subtitle: "updated on 19 January 2023"
 date: 2023-01-18T23:48:40+07:00
-draft: true
+draft: false
 toc:
   auto: true
 ---
