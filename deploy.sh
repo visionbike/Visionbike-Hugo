@@ -43,7 +43,7 @@ else
             g) # set the hosting site commit
                 MSG_SITE=$OPTARG;;
             s) # set the site commit
-                MSG_SITE=$OPTARG;;
+                MSG_GH=$OPTARG;;
             \?) # invalid option
                 echo -e "\033[0;32mError: Invalid option.\033[0m"
                 exit;;
