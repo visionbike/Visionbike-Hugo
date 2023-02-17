@@ -4,7 +4,7 @@ date: 2023-02-12T00:45:04+08:00
 draft: false
 author: Felix Nguyen
 tags: ["installation", "configuration"]
-categories: ["notes"]
+categories: ["Setup"]
 toc:
   auto: false
 ---
@@ -15,7 +15,7 @@ Hugo is a static site generator written in Go. It is “the world’s fastest fr
 
 Besides, building a blog with Hugo is simple and easy. Here is how:
 
-## 1 Requirements
+## 1. Requirements
 
 You can install latest version of [:(far fa-file-archive fa-fw): Hugo (> 0.62.0)](https://gohugo.io/getting-started/installing/) for your OS (**Windows**, **Linux**, **macOS**).
 
@@ -41,11 +41,11 @@ hugo version
 
 The Hugo version should show up if the installation is successful.
 
-## 2 Build Local Project And Connect To Github
+## 2. Build Local Project And Connect To Github
 
 The following steps are here to help you initialize your new website in the local machine and instruct you to store the source code as well as deploy your website.
 
-### 2.1 Create The Project In Local Machine
+### 2.1. Create The Project In Local Machine
 
 Hugo provides a `new` command to create a new website:
 
@@ -59,7 +59,7 @@ hugo new [USERNAME]-Hugo
 
 ![](create-new-website.png)
 
-### 2.2 Create Necessary Repositories On Github
+### 2.2. Create Necessary Repositories On Github
 
 First, your need to create a new repository at github with `USERNAME.github.io`. This repository is the place to host your Github page.
 
@@ -73,7 +73,7 @@ You also need a repository on Github to store your souce code and it also help y
 If we create a repo **without** a README file it’s easier to avoid accidental history conflicts when pushing a local project to a fresh repo. We can always add one later.
 {{< /admonition >}}
 
-### 2.3 Install the Theme
+### 2.3. Install the Theme
 
 Hugo provides plenty of free themes to decorate your website and make the configuration even more easier. You can access free Hugo themes via [this website](https://themes.gohugo.io/).
 
@@ -84,7 +84,7 @@ git init
 git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 ```
 
-### 2.3 Basic Configuration
+### 2.4. Basic Configuration
 
 The following is a basic configuration for the my website, just modify as you want:
 
@@ -107,7 +107,7 @@ You should name `publishdir` as your hosting repository's name, it will store yo
 
 You can read more the [**LoveIt**](https://hugoloveit.com/categories/documentation/) documentation to customize your wesite as your want.
 
-### 2.4 Link Local Project to Repositories
+### 2.5. Link Local Project to Repositories
 
 Before linking your Hugo project, add our hosting submodule to the project. Our goal is to separate the commit histories of our project source and our site built output to the `publishdir` directory.
 
@@ -142,3 +142,19 @@ It’s super important when we build to make sure that we commit and push both t
 {{< /admonition >}}
 
 You can read more in [this website](https://dev.to/aormsby/how-to-set-up-a-hugo-site-on-github-pages-with-git-submodules-106p) to know the benefits and drawbacks when using submodule to deploy the Github page.
+
+### 2.6. Create Your First Post
+
+Here is the way to create your first post:
+
+```bash
+hugo new posts/first_post.md
+```
+
+Feel free to edit the post file by adding some sample content and replacing the title value in the beginning of the file.
+
+{{< admonition >}}
+By default all posts and pages are created as a draft. If you want to render these pages, remove the property `draft: true` from the metadata, set the property `draft: false` or add `-D`/`--buildDrafts` parameter to `hugo server` command.
+{{< /admonition >}}
+
+After completion, you just follow the instrustion in Section 2.5 to publish the post. To custom your post, you can read more [the document](https://hugoloveit.com/theme-documentation-content/) of LoveIt Theme.
