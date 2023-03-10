@@ -1,6 +1,3 @@
-[submodule "visionbike.github.io"]
-	path = visionbike.github.io
-	url = https://github.com/visionbike/visionbike.github.io.git
 [submodule "themes/LoveIt"]
 	path = themes/LoveIt
 	url = https://github.com/visionbike/LoveIt.git
