@@ -1,49 +1,51 @@
 ---
 title: "Curriculum Vitae"
-subtitle: "updated on 19 January 2023"
+subtitle: "updated on 10 March 2023"
 date: 2023-01-18T23:48:40+07:00
 draft: false
 toc:
   auto: false
 ---
+
 ## Experience
 
-##### Research Assistant
-@Applied Computing and Multimedia Lab, National Yang-Ming Chiao-Tung University, Taiwan
+#### Research Assistant
 
-@Sept 2020 - Jan 2021
+&emsp;*Applied Computing and Multimedia Lab, National Yang-Ming Chiao-Tung University, Taiwan*
 
-To research suppervised and unsuppervised-based approaches for digital image enhancement.
+&emsp;*Sept 2020 - Jan 2021*
+
+* Research suppervised and unsuppervised-based approaches for digital image enhancement.
 
 ##### Software Engineer
-@Lac Viet Computing Corporation, Vietnam
 
-@Sept 2017 - Aug 2018
+&emsp;*Lac Viet Computing Corporation, Vietnam*
 
-To develop deep learning core of Question Answering System that using Restful API, and noSQL database (MongoDB) for Vietnamese Law.
+&emsp;*Sept 2017 - Aug 2018*
 
-To develop a prototype version for a facial recognition-based timekeeping service.
+* Develop deep learning core of Question Answering System that using Restful API, and noSQL database (MongoDB) for Vietnamese Law.
 
+* Develop a prototype version for a facial recognition-based timekeeping service.
 
 ## Education
 
-##### National Taiwan University of Science and Technology
+#### National Taiwan University of Science and Technology
 
-@Ph.D. Candidate, Electrical Engineering
+&emsp;*Ph.D. Candidate, Electrical Engineering*
 
-@2021 - now
+&emsp;*2021 - now*
 
-To study vision-based road anomaly detection, sEMG signal processing, and sEMG-based hand gesture recognition.
+* Study vision-based road anomaly detection, sEMG signal processing, and sEMG-based hand gesture recognition.
 
-##### National Taiwan University of Science and Technology
+#### National Taiwan University of Science and Technology
 
-@M.Sc., Computer Science and Information Engineering
+&emsp;*M.Sc., Computer Science and Information Engineering*
 
-@2018 - 2020
+&emsp;*2018 - 2020*
 
-To study small object detection and distance estimation for the ADAS system, chroma subsampling and upsampling in JPEG compression.
+* Study small object detection and distance estimation for the ADAS system, chroma subsampling and upsampling in JPEG compression.
 
-Thesis: A Study on Optimal Chroma Subsampling and Upsampling Combination Methods for JPEG Image Reconstrsuction.
+* Thesis: A Study on Optimal Chroma Subsampling and Upsampling Combination Methods for JPEG Image Reconstrsuction.
 
 ## Publications
 

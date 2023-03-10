@@ -8,7 +8,7 @@ draft: false
 ![Phuc Thanh-Thien Nguyen](/images/avatar-real.jpeg "Phuc Thanh-Thien Nguyen (Felix Nguyen), EE Ph.D. Candidate")
 {{< /style >}}
 
-I am Phuc Thanh-Thien Nguyen (Felix Nguyen), current working as Ph.D Candidate at Autonomous and Soft Robotics (ASR)Laboratory National Taiwan University, Taiwan. My focus lies with computer vision, digital signal processing, machine learning and deep learning in various applications. I have experienced with applications such as bio-signal, semantic segmentation and object detection.
+I am Phuc Thanh-Thien Nguyen (Felix Nguyen), current working as Ph.D Candidate at Autonomous and Soft Robotics (ASR) Laboratory, National Taiwan University, Taiwan. I focus on computer vision, digital signal processing, machine learning and deep learning in various applications, such as bio-signal, semantic segmentation and object detection.
 
 ## Welcome to my blog!
 In this blog, I will post small yet interesting notes of knowledge as well as state-of-the-art AI innovation, that I have found during my work as a researcher.

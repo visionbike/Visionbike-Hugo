@@ -1,119 +1,71 @@
 # base URL
-baseURL = 'https://visionbike.github.io'
+baseURL = "https://visionbike.github.io"
 # site publish directory
 publishdir = "visionbike.github.io"
-# language code
-languageCode = 'en-us'
-# site title
-title = 'Visionbike'
-# site theme
-theme = "LoveIt"
 
-# site author config
+# theme
+theme = "LoveIt"
+# theme directory
+themesDir = "themes"
+
+# determines default content language ["en", "zh-cn", "fr", "vi", ...]
+defaultContentLanguage = "en"
+# language code ["en", "zh-CN", "fr", "vi", ...]
+languageCode = "en"
+# language name ["English", "简体中文", "Français", "Tiếng Việt", ...]
+languageName = "English"
+# whether to include Chinese/Japanese/Korean
+hasCJKLanguage = false
+
+# whether to use robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
+enableGitInfo = true
+# whether to use emoji code
+enableEmoji = true
+
+# ignore some build errors
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+
+# website title
+title = "Visionbike"
+
+# author config
 [author]
   name = "Phuc Thanh-Thien Nguyen"
   email = "phuc.visionbike@gmail.com"
-
-# site header config
-[params.header]
-  # desktop header mode ["fixed", "normal", "auto"]
-  desktopMode = "auto"
-  # mobile header mode ["fixed", "normal", "auto"]
-  mobileMode = "auto"
-  # header title config
-  [params.header.title]
-    # logo URL
-    logo = ""
-    # title name
-    name = "Visionbike"
-    # whether to use typeit aniomation
-    typeit = false
-
-# site footer config
-[params.footer]
-  enable = true
-  # whether to show Hugo and theme info
-  hugo = true
-  # whether to show copyright info
-  copyright = true
-  # whether to show author
-  author = true
-  # site creation time
-  since = 2023
-
-# site app config
-[params.app]
-  # optional site title override for the app when added to an iOS home screen or Android launcher
-  title = "visionbike.github.io"
-  # whether to omit favicon resource links
-  noFavicon = false
-  # modern SVG favicon to use in place of older style .png and .ico files
-  svgFavicon = "/images/favicon.svg"
-
-# home page config
-[params.home]
-  # home page profile
-  [params.home.profile]
-    enable = true
-    # avatar URL shown in home page
-    avatarURL = "/images/avatar-3d.png"
-    # title shown in the home page
-    title = "visionbike.github.io"
-    # subtitle shown in the home page
-    subtitle = "Personal Notes for CV | DSP | ML"
-    # disclaimer
-    disclaimer = ""
-    # whether to show social links
-    social = true
-    # whether to use typeit animation for subtitle
-    typeit = true
-
-# social config in home page
-[params.social]
-  [params.social.GitHub]
-    weight = 1
-    id = "visionbike"
-    title = "Github"
-  [params.social.Linkedin]
-    weight = 2
-    id = "nttphuc"
-    title = "Linkedin"
-  [params.social.Email]
-    # weight when arranging icons (the greater the weight, the later the icon is positioned) 
-    weight = 3
-    # social ID
-    id = "phuc.visionbike@gmail.com"
-    # content honvering on the icon
-    title = "Email"
-
-# page global config
-[params.page]
-  # table of content config
-  [params.page.toc]
-    # whether to enable table of the contents
-    enable = true
-    # whether to keep the table of the contents in front of the post
-    keepStatic = true
-    # whether to make the table of the contents the sidebar automatically collapse
-    auto = true
 
 # menu config
 [menu]
   [[menu.main]]
     weight = 1
     identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    # name
     name = "Posts"
+    # url
     url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
   [[menu.main]]
     weight = 2
     identifier = "tags"
+    pre = ""
+    post = ""
     name = "Tags"
     url = "/tags/"
+    title = ""
   [[menu.main]]
     weight = 3
     identifier = "categories"
+    pre = ""
+    post = ""
     name = "Categories"
     url = "/categories/"
+    title = ""
   [[menu.main]]
     weight = 4
     identifier = "about"
@@ -125,16 +77,346 @@ theme = "LoveIt"
     name = "CV"
     url = "/cv/"
 
+# site config
+[params]
+  # site default theme ["auto", "light", "dark"]
+  defaultTheme = "auto"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = "https://github.com/visionbike/Visionbike-Hugo"
+  # which hash function is used for SRI, if empty then no SRI is used
+  # ["sha256", sha384", "sha512", "md5"]
+  fingerprint = ""
+  # date format
+  dateFormat = "2006-01-06"
+  # wehbsite title for Open Graph and Twitter Cards
+  title = "Visionbike"
+  # website description for RSS, SEO, Open Graph and Twitter Cards
+  images = ["/images/avatar-3d.png"]
+
+    # site app config
+  [params.app]
+    # optional site title override for the app when added to an iOS home screen or Android launcher
+    title = "visionbike.github.io"
+    # whether to omit favicon resource links
+    noFavicon = false
+    # modern SVG favicon to use in place of older style .png and .ico files
+    svgFavicon = "/images/favicon.svg"
+
+  # header config
+  [params.header]
+    # desktop header mode ["fixed", "normal", "auto"]
+    desktopMode = "auto"
+    # mobile header mode ["fixed", "normal", "auto"]
+    mobileMode = "fixed"
+    # header title config
+    [params.header.title]
+      # logo URL
+      logo = ""
+      # title name
+      name = "Visionbike"
+      # you can add extra information before the name (HTML is supported), such as icons
+      pre = ""
+      # you can add extra information after the name (HTML is supported), such as icons
+      post = ""
+      # whether to use typeit aniomation
+      typeit = false
+
+  # footer config
+  [params.footer]
+    enable = true
+    # custom content (HTML format is supported)
+    custom = ""
+    # whether to show Hugo and theme info
+    hugo = true
+    # whether to show copyright info
+    copyright = true
+    # whether to show author
+    author = true
+    # site creation time
+    since = 2023
+    # license information (HTML is supported)
+    license = "<a rel=\"license external nofollow noopener noreffer\" href=\"https://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\">CC BY-NC 4.0</a>"
+  
+  # search config
+  [params.search]
+    enable = true
+    # type of search engine ["lunr", "algolia"]
+    type = "algolia"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    # max number of results length
+    maxResultLength = 10
+    # snippet length of the result
+    snippetLength = 30
+    # HTML tag name of the highlight part in results
+    highlightTag = "em"
+    # whether to use the absolute URL based on the baseURL in search index
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+  
+  # section page config
+  [params.section]
+    # special amount of posts in each section page
+    paginate = 20
+    # date format (year, month and day)
+    dateFormat = "2006-01-02"
+    # amount of RSS pages
+    rss = 10
+
+  # list page config
+  [params.list]
+    # special amount of posts in each list page
+    paginate = 20
+    # date format (year, month and day)
+    dateFormat = "2006-01-02"
+    # amount of RSS pages
+    rss = 10
+
+  # home page config
+  [params.home]
+    # amount of RSS pages
+    rss = 10
+  
+    # home page profile
+    [params.home.profile]
+      enable = true
+      # avatar URL shown in home page
+      avatarURL = "/images/avatar-3d.png"
+      # title shown in the home page
+      title = "Phuc Thanh-Thien Nguyen - Felix Nguyen"
+      # subtitle shown in the home page
+      subtitle = "Personal Notes for CV | DSP | ML"
+      # disclaimer
+      disclaimer = ""
+      # whether to show social links
+      social = true
+      # whether to use typeit animation for subtitle
+      typeit = true
+    
+    # home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+  
+  # social config in home page
+  [params.social]
+    [params.social.GitHub]
+      # weight when arranging icons (the greater the weight, the later the icon is positioned) 
+      weight = 1
+      # social ID
+      id = "visionbike"
+      # content honvering on the icon
+      title = "Github"
+    [params.social.Linkedin]
+      weight = 2
+      id = "nttphuc"
+      title = "Linkedin"
+    [params.social.Email]
+      weight = 3
+      id = "phuc.visionbike@gmail.com"
+      title = "Email"
+
+  # page global config
+  [params.page]
+    # whether to hide a page from home page
+    hiddenFromHomePage = false
+    # whether to hide a page from search results
+    hiddenFromSearch = false
+    # whether to enable twemoji
+    twemoji = false
+    # whether to enable lightgallery
+    lightgallery = false
+    # whether to enable the ruby extended syntax
+    ruby = true
+    # whether to enable the fraction extended syntax
+    fraction = true
+    # whether to enable the fontawesome extended syntax
+    fontawesome = true
+    # whether to show link to Raw Markdown content of the content
+    linkToMarkdown = true
+    # whether to show the full text content in RSS
+    rssFullText = false
+    
+    # table of content config
+    [params.page.toc]
+      # whether to enable table of the contents
+      enable = true
+      # whether to keep the table of the contents in front of the post
+      keepStatic = false
+      # whether to make the table of the contents the sidebar automatically collapsed
+      auto = true
+    
+    # code config
+    [params.page.code]
+      # whether to show the copy button of the code block
+      copy = true
+      # the maximum number of lines of displayed code by default
+      maxShownLines = 50
+    
+    # KaTeX mathematical formulas config (KaTeX https://katex.org/)
+    [params.page.math]
+      enable = false
+      # default inline delimiter is $ ... $ and \( ... \)
+      inlineLeftDelimiter = "$"
+      inlineRightDelimiter = "$"
+      # default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      # KaTeX extension copy_tex
+      copyTex = true
+      # KaTeX extension mhchem
+      mhchem = true
+    
+    # social share links in post page
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = false
+      Whatsapp = false
+      Pinterest = false
+      Tumblr = false
+      HackerNews = true
+      Reddit = false
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = true
+      Instapaper = false
+      Pocket = false
+      Flipboard = false
+      Weibo = true
+      Blogger = false
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = false
+      Skype = false
+      Trello = false
+      Mix = false
+    
+    # comment config
+    [params.page.comment]
+      enable = true
+      # Disqus comment config (https://disqus.com/)
+      [params.page.comment.disqus]
+        enable = false
+        # Disqus shortname to use Disqus in posts
+        shortname = ""
+
+      # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
+      [params.page.comment.facebook]
+        enable = false
+        width = "100%"
+        numPosts = 10
+        appId = ""
+        # automatically adapt the current theme i18n configuration when empty
+        languageCode = ""
+
+    # third-party library config
+    [params.page.library]
+      [params.page.library.css]
+        # someCSS = "some.css"
+        # located in "assets/" 位于 "assets/"
+        # Or 或者
+        # someCSS = "https://cdn.example.com/some.css"
+
+      [params.page.library.js]
+        # someJavascript = "some.js"
+        # located in "assets/" 位于 "assets/"
+        # Or 或者
+        # someJavascript = "https://cdn.example.com/some.js"
+    
+    # page seo config
+    [params.page.seo]
+      # image URL
+      images = []
+      # publisher information
+      [params.page.seo.publisher]
+        name = "xxxx"
+        logoUrl = "/images/avatar-3d.png"
+  
+  # TypeIt config
+  [params.typeit]
+    # typing speed between each step (measured in milliseconds)
+    speed = 100
+    # blinking speed of the cursor (measured in milliseconds)
+    cursorSpeed = 1000
+    # character used for the cursor (HTML format is supported)
+    cursorChar = "|"
+    # cursor duratrion after typing finishing (measured in milliseconds, "-1" means unlimited)
+    duration = -1
+  
+  # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
+  [params.verification]
+    google = ""
+    bing = ""
+    yandex = ""
+    pinterest = ""
+    baidu = ""
+  
+  # site seo config
+  [params.seo]
+    # image URL
+    image = ""
+    # thumbnail URL
+    thumbnailUrl = ""
+  
+  # anlytics config
+  [params.analytics]
+    enable = false
+    # google analytics
+    [params.analytics.google]
+      id = ""
+      # whether to anonymize IP
+      anonymizeIP = true
+  
+  # cookie consent config
+  [params.cookieconsent]
+    enable = false
+    # text strings used for cookie consent banner
+    [params.cookieconsent.content]
+      message = ""
+      dismiss = ""
+      link = ""
+  
+  # CDN config for third-party library files
+  [params.cdn]
+    # CDN data file name, disabled by default
+    # ["jsdelivr.yml"]
+    # located in "themes/LoveIt/assets/data/cdn/" directory
+    # you can store your own data files in the same path under your project:
+    # "assets/data/cdn/"
+    # CDN 数据文件名称, 默认不启用
+    # ["jsdelivr.yml"]
+    # 位于 "themes/LoveIt/assets/data/cdn/" 目录
+    # 可以在你的项目下相同路径存放你自己的数据文件:
+    # "assets/data/cdn/"
+    data = "jsdelivr.yml"
+
+  # compatibility config
+  [params.compatibility]
+    # whether to use Polyfill.io to be compatible with older browsers
+    polyfill = false
+    # whether to use object-fit-images to be compatible with older browsers
+    objectFit = false
+
 # markup related config in Hugo
 [markup]
   # syntax highlighting (https://gohugo.io/content-management/syntax-highlighting)
-  [markup.highlighting]
+  [markup.highlight]
     codeFences = true
     guessSyntax = true
     lineNos = true
     lineNumbersInTable = true
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+
   # Goldmark is from Hugo 0.60 the default labrary used for markdown
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -148,8 +430,9 @@ theme = "LoveIt"
     [markup.goldmark.renderer]
       # whether to use HTML tags directly in the document
       unsafe = true
+
   # table of contents settings
-  [markup.tableOfcontents]
+  [markup.tableOfContents]
     startLevel = 2
     endLevel = 6
 
@@ -159,6 +442,33 @@ theme = "LoveIt"
   filename = "sitemape.xml"
   priority = 0.5
 
-# permalinks config
+# permalinks config (https://gohugo.io/content-management/urls/#permalinks)
 [permalinks]
   posts = ":filename"
+
+# privacy config (https://gohugo.io/about/hugo-and-gdpr/)
+[privacy]
+  [privacy.twitter]
+    enableDNT = true
+  
+  [privacy.youtube]
+    privacyEnhanced = true
+
+# options to make output .md files
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+# options to make output .md files
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+# options to make hugo output files
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]
