@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Visionbike</title>
+        <link>https://visionbike.github.io/posts/</link>
+        <description>All Posts | Visionbike</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>phuc.visionbike@gmail.com (Phuc Thanh-Thien Nguyen)</managingEditor>
+            <webMaster>phuc.visionbike@gmail.com (Phuc Thanh-Thien Nguyen)</webMaster><lastBuildDate>Fri, 17 Feb 2023 16:07:45 &#43;0800</lastBuildDate><atom:link href="https://visionbike.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Setup Deep Learning Environment With Windows 11 and WSL2</title>
+    <link>https://visionbike.github.io/setup-dl-environment-with-win11-and-wsl2/</link>
+    <pubDate>Fri, 17 Feb 2023 16:07:45 &#43;0800</pubDate>
+    <author>Felix Nguyen</author>
+    <guid>https://visionbike.github.io/setup-dl-environment-with-win11-and-wsl2/</guid>
+    <description><![CDATA[After a long time of saving money, I finally bought a high-end gaming laptop, not just for games but also for working. Somebody may wonder why I don&rsquo;t build a powerful PC instead of a laptop. However, a high-end gaming laptop can be optimal when your job needs frequent movement or your room lacks space for a huge PC.
+My laptop is Lenovo 7 16IAX7 with Core i7 12800HX CPU, Geforce RTX 3070 Ti GPU and DDR5 16GB RAM.]]></description>
+</item>
+<item>
+    <title>Build Personal Blog With Github-Page</title>
+    <link>https://visionbike.github.io/build-personal-blog-with-gh-page/</link>
+    <pubDate>Sun, 12 Feb 2023 00:45:04 &#43;0800</pubDate>
+    <author>Felix Nguyen</author>
+    <guid>https://visionbike.github.io/build-personal-blog-with-gh-page/</guid>
+    <description><![CDATA[Writing a personal blog is an exciting hobby when I can write my idea, take notes and share them with everyone. But no one wants to spend too much time building everything from scratch. After some searching, I got to know there are several static site generators out there, and the most used generators are Jekyll, Hexo, and Hugo. All of them work perfectly with GitHub Pages. I chose Hugo as my site generator, and it worked perfectly.]]></description>
+</item>
+</channel>
+</rss>
